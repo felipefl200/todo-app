@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
 import useSWR from 'swr'
 import AddTodo from '../components/AddTodo'
 import Navbar from '../components/Navbar'
 import { Todo } from '../lib/db'
 import axios from 'axios'
 
-function swr() {
+function SwrPage() {
 
     const { data: todos } = useSWR<Todo[]>('/api/todo', (url: string) => axios(url).then(res => res.data))
 
@@ -24,4 +23,4 @@ function swr() {
     )
 }
 
-export default swr
+export default SwrPage

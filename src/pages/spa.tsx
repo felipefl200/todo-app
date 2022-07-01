@@ -3,7 +3,7 @@ import AddTodo from '../components/AddTodo'
 import Navbar from '../components/Navbar'
 import { Todo } from '../lib/db'
 
-function spa() {
+function Spa() {
     const [todos, setTodos] = useState<Todo[]>()
     useEffect(() => {
         const loadData = async () => {
@@ -28,4 +28,4 @@ function spa() {
     )
 }
 
-export default spa
+export default Spa
