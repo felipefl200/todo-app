@@ -1,6 +1,6 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import { useState } from 'react'
-import { getAllTodos, Todo } from './lib/db'
+import { getAllTodos, Todo } from '../lib/db'
 
 export const getServerSideProps: GetServerSideProps = async () => {
 

@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { createTodo } from '../lib/db'
+import { createTodo } from '../../lib/db'
 
 
 export default async function handler(
